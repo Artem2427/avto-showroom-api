@@ -1,7 +1,8 @@
 import { HttpService } from '@nestjs/axios';
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import * as FormData from 'form-data';
+// import * as FormData from 'form-data';
+import FormData from "form-data"
 import { randomCode } from 'src/core/utils/random-code';
 @Injectable()
 export class FileService {
