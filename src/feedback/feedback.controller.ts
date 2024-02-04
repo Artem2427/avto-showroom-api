@@ -22,8 +22,8 @@ import { CreateFeedbackDTO } from './dto/createFeedback.dto';
 
 import { UpdateStatusFeedbackDTO } from './dto/updateStatus.dto';
 import { FeedbackService } from './feedback.service';
-import { PaginationQueryDTO } from 'core/dto/pagination.query.dto';
-import { UserRolesEnum } from 'core/enums/userRole.enum';
+import { PaginationQueryDTO } from '../../core/dto/pagination.query.dto';
+import { UserRolesEnum } from '../../core/enums/userRole.enum';
 
 @ApiTags('Feedback flow')
 @Controller('feedback')

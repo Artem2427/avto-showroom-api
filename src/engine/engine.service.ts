@@ -11,7 +11,7 @@ import { Repository } from 'typeorm';
 import { CreateEngineDTO } from './dto/createEngine.dto';
 import { UpdateEngineDTO } from './dto/updateEngine.dto';
 import { EngineEntity } from './entity/engine.entity';
-import { FuelEnum } from 'core/enums/fuel.enum';
+import { FuelEnum } from '../../core/enums/fuel.enum';
 
 @Injectable()
 export class EngineService {

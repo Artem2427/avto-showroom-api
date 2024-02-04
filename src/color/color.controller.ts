@@ -28,8 +28,8 @@ import { ColorService } from './color.service';
 import { CreateColorDTO } from './dto/createColor.dto';
 
 import { ColorEntity } from './entity/color.entity';
-import { PaginationQueryDTO } from 'core/dto/pagination.query.dto';
-import { UserRolesEnum } from 'core/enums/userRole.enum';
+import { PaginationQueryDTO } from '../../core/dto/pagination.query.dto';
+import { UserRolesEnum } from '../../core/enums/userRole.enum';
 
 @ApiTags('Color flow')
 @Controller('color')

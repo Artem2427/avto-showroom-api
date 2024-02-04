@@ -21,7 +21,7 @@ import { RoleGuard } from 'src/user/guards/role.guard';
 import { DriveService } from './drive.service';
 import { CreateDriveDTO } from './dto/createDrive.dto';
 import { DriveEntity } from './entity/drive.entity';
-import { UserRolesEnum } from 'core/enums/userRole.enum';
+import { UserRolesEnum } from '../../core/enums/userRole.enum';
 
 @ApiTags('Drive flow')
 @Controller('drive')

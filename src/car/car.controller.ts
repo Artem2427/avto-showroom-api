@@ -41,10 +41,10 @@ import { PaginationResDTO } from './dto/paginationRes.dto';
 import { RemoveImageQueryDTO } from './dto/removeImageQuery.dto';
 import { UpdateCarDTO } from './dto/updateCar.dto';
 import { CarEntity } from './entity/car.entity';
-import { ResSuccessDTO } from 'core/dto/resSuccess.dto';
-import { UserRolesEnum } from 'core/enums/userRole.enum';
-import { CarOrderingFieldsEnum } from 'core/enums/carOrederingFields.enum';
-import { CarAdminOrderingFieldsEnum } from 'core/enums/carAdminOrederingFields.enum';
+import { ResSuccessDTO } from '../../core/dto/resSuccess.dto';
+import { UserRolesEnum } from '../../core/enums/userRole.enum';
+import { CarOrderingFieldsEnum } from '../../core/enums/carOrederingFields.enum';
+import { CarAdminOrderingFieldsEnum } from '../../core/enums/carAdminOrederingFields.enum';
 
 @ApiTags('Car flow')
 @Controller('cars')

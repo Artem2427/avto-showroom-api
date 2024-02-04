@@ -30,8 +30,8 @@ import { UpdateUserDTO } from './dto/updateUser.dto';
 import { UserEntity } from './entity/user.entity';
 import { RoleGuard } from './guards/role.guard';
 import { UserService } from './user.service';
-import { PaginationQueryDTO } from 'core/dto/pagination.query.dto';
-import { UserRolesEnum } from 'core/enums/userRole.enum';
+import { PaginationQueryDTO } from '../../core/dto/pagination.query.dto';
+import { UserRolesEnum } from '../../core/enums/userRole.enum';
 
 @ApiTags('User flow')
 @Controller('user')

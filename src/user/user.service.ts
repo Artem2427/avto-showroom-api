@@ -13,8 +13,8 @@ import { ChangePasswordDTO } from './dto/changePassowrd.dto';
 import { UpdateUserDTO } from './dto/updateUser.dto';
 import { UserEntity } from './entity/user.entity';
 // import { PaginationQueryDTO } from 'src/core/dto/pagination.query.dto';
-import { IPaginationQuery } from 'core/types/pagination.intrface';
-import { PaginationQueryDTO } from 'core/dto/pagination.query.dto';
+import { IPaginationQuery } from '../../core/types/pagination.intrface';
+import { PaginationQueryDTO } from '../../core/dto/pagination.query.dto';
 // import { IPaginationQuery } from 'src/core/types/pagination.intrface';
 
 @Injectable()

@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsBoolean, IsEnum, IsNotEmpty, IsUUID } from 'class-validator';
-import { CarFilterFieldsEnum, FilterParamsValuesType } from 'core/enums/carFilter.enum';
+import { CarFilterFieldsEnum, FilterParamsValuesType } from '../../../core/enums/carFilter.enum';
 // import {
 //   CarFilterFieldsEnum,
 //   FilterParamsValuesType,

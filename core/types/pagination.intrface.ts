@@ -4,3 +4,4 @@ export interface IPagination {
 }
 
 export type IPaginationQuery = IPagination & { searchTerm?: string };
+

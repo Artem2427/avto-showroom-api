@@ -33,10 +33,10 @@ import {
 import { RemoveImageQueryDTO } from './dto/removeImageQuery.dto';
 import { API_URL } from 'src/file/fileConstants';
 import { FileService } from 'src/file/file.service';
-import { Utils } from 'core/utils/utils';
-import { SortDirection } from 'core/enums/sortDirection.enum';
-import { CarOrderingFieldsEnum } from 'core/enums/carOrederingFields.enum';
-import { CarAdminOrderingFieldsEnum } from 'core/enums/carAdminOrederingFields.enum';
+import { Utils } from '../../core/utils/utils';
+import { SortDirection } from '../../core/enums/sortDirection.enum';
+import { CarOrderingFieldsEnum } from '../../core/enums/carOrederingFields.enum';
+import { CarAdminOrderingFieldsEnum } from '../../core/enums/carAdminOrederingFields.enum';
 
 @Injectable()
 export class CarService {

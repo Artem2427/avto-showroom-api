@@ -32,8 +32,8 @@ import { BrandService } from './brand.service';
 import { BrandCreateDTO } from './dto/brandCreate.dto';
 import { BrandUpdateDTO } from './dto/brandUpdate.dto';
 import { BrandEntity } from './entity/brand.entity';
-import { PaginationQueryDTO } from 'core/dto/pagination.query.dto';
-import { UserRolesEnum } from 'core/enums/userRole.enum';
+import { PaginationQueryDTO } from '../../core/dto/pagination.query.dto';
+import { UserRolesEnum } from '../../core/enums/userRole.enum';
 
 @ApiTags('Brand flow')
 @Controller('brand')

@@ -20,7 +20,7 @@ import { RoleGuard } from 'src/user/guards/role.guard';
 import { CreateFuelDTO } from './dto/createFuel.dto';
 import { FuelEntity } from './entity/fuelType.entity';
 import { FuelService } from './fuel.service';
-import { UserRolesEnum } from 'core/enums/userRole.enum';
+import { UserRolesEnum } from '../../core/enums/userRole.enum';
 
 @ApiTags('Fuel flow')
 @Controller('fuel')

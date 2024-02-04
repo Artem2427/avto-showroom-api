@@ -15,7 +15,7 @@ import { Repository } from 'typeorm';
 import { BrandCreateDTO } from './dto/brandCreate.dto';
 import { BrandUpdateDTO } from './dto/brandUpdate.dto';
 import { BrandEntity } from './entity/brand.entity';
-import { PaginationQueryDTO } from 'core/dto/pagination.query.dto';
+import { PaginationQueryDTO } from '../../core/dto/pagination.query.dto';
 
 @Injectable()
 export class BrandService {

@@ -1,6 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-// import { BaseEntity } from 'core/entities/base.entity';
-import { CurrencyEnum } from 'core/enums/currency.enum';
+import { CurrencyEnum } from '../../../core/enums/currency.enum';
 import { BodyTypeEntity } from 'src/body-type/entity/bodyType.entity';
 import { BrandEntity } from 'src/brand/entity/brand.entity';
 import { ColorEntity } from 'src/color/entity/color.entity';

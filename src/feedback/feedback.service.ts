@@ -11,8 +11,8 @@ import { CreateFeedbackDTO } from './dto/createFeedback.dto';
 
 import { UpdateStatusFeedbackDTO } from './dto/updateStatus.dto';
 import { FeedbackEntity } from './entity/feeadback.entity';
-import { IPaginationQuery } from 'core/types/pagination.intrface';
-import { PaginationQueryDTO } from 'core/dto/pagination.query.dto';
+import { IPaginationQuery } from '../../core/types/pagination.intrface';
+import { PaginationQueryDTO } from '../../core/dto/pagination.query.dto';
 
 @Injectable()
 export class FeedbackService {

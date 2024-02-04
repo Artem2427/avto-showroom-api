@@ -13,8 +13,8 @@ import {
 // import { CarOrderingFieldsEnum } from 'src/core/enums/carOrederingFields.enum';
 // import { SortDirection } from 'src/core/enums/sortDirection.enum';
 import { OrderingFields } from '../types/paginationParams.interface';
-import { SortDirection } from 'core/enums/sortDirection.enum';
-import { CarOrderingFieldsEnum } from 'core/enums/carOrederingFields.enum';
+import { SortDirection } from '../../../core/enums/sortDirection.enum';
+import { CarOrderingFieldsEnum } from '../../../core/enums/carOrederingFields.enum';
 
 export class PaginationQueryDTO<T extends OrderingFields> {
   @ApiProperty({ type: Number })

@@ -26,7 +26,7 @@ import { CreateEngineDTO } from './dto/createEngine.dto';
 import { UpdateEngineDTO } from './dto/updateEngine.dto';
 import { EngineService } from './engine.service';
 import { EngineEntity } from './entity/engine.entity';
-import { UserRolesEnum } from 'core/enums/userRole.enum';
+import { UserRolesEnum } from '../../core/enums/userRole.enum';
 
 @ApiTags('Engine flow')
 @Controller('engine')

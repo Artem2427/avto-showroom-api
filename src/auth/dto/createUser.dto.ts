@@ -8,7 +8,7 @@ import {
   MaxLength,
 } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { UserRolesEnum } from 'core/enums/userRole.enum';
+import { UserRolesEnum } from '../../../core/enums/userRole.enum';
 
 // import { UserRolesEnum } from 'src/core/enums/userRole.enum';
 

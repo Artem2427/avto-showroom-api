@@ -21,7 +21,7 @@ import { RoleGuard } from 'src/user/guards/role.guard';
 import { CreateTransmissionDTO } from './dto/createTransmisson.dto';
 import { TransmissionEntity } from './entity/trnasmission.entity';
 import { TransmissionService } from './transmission.service';
-import { UserRolesEnum } from 'core/enums/userRole.enum';
+import { UserRolesEnum } from '../../core/enums/userRole.enum';
 
 @ApiTags('Transmission flow')
 @Controller('transmission')

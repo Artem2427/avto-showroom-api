@@ -8,7 +8,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CreateColorDTO } from './dto/createColor.dto';
 import { ColorEntity } from './entity/color.entity';
-import { PaginationQueryDTO } from 'core/dto/pagination.query.dto';
+import { PaginationQueryDTO } from '../../core/dto/pagination.query.dto';
 
 @Injectable()
 export class ColorService {

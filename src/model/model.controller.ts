@@ -24,7 +24,7 @@ import { RoleGuard } from 'src/user/guards/role.guard';
 import { CreateModelDTO } from './dto/createModel.dto';
 import { ModelEntity } from './entity/model.entity';
 import { ModelService } from './model.service';
-import { UserRolesEnum } from 'core/enums/userRole.enum';
+import { UserRolesEnum } from '../../core/enums/userRole.enum';
 
 @ApiTags('Model flow')
 @Controller('model')

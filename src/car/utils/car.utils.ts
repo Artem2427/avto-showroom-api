@@ -6,9 +6,9 @@
 // import { SortDirection } from 'src/core/enums/sortDirection.enum';
 import { PaginationFilterDTO } from '../dto/paginationFilter.dto';
 import { IParseOrdering } from '../types/paginationParams.interface';
-import { SortDirection } from 'core/enums/sortDirection.enum';
-import { CarFilterFieldsEnum, FilterParamsValuesType } from 'core/enums/carFilter.enum';
-import { CarAdminOrderingFieldsEnum } from 'core/enums/carAdminOrederingFields.enum';
+import { SortDirection } from '../../../core/enums/sortDirection.enum';
+import { CarFilterFieldsEnum, FilterParamsValuesType } from '../../../core/enums/carFilter.enum';
+import { CarAdminOrderingFieldsEnum } from '../../../core/enums/carAdminOrederingFields.enum';
 
 export const parseAdminCarsOrdering = (
   ordering: CarAdminOrderingFieldsEnum,
