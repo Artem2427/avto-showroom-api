@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
-import { BodyTypeModule } from 'src/body-type/body-type.module';
-import { BrandModule } from 'src/brand/brand.module';
-import { CarModule } from 'src/car/car.module';
-import { ColorModule } from 'src/color/color.module';
-import { FuelModule } from 'src/fuel/fuel.module';
-import { TransmissionModule } from 'src/transmission/transmission.module';
+import { BodyTypeModule } from '../body-type/body-type.module';
+import { BrandModule } from '../brand/brand.module';
+import { CarModule } from '../car/car.module';
+import { ColorModule } from '../color/color.module';
+import { FuelModule } from '../fuel/fuel.module';
+import { TransmissionModule } from '../transmission/transmission.module';
 import { FilterController } from './filter.controller';
 import { FilterService } from './filter.service';
 

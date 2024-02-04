@@ -17,10 +17,9 @@ import {
   ApiOperation,
   ApiTags,
 } from '@nestjs/swagger';
-import { AuthGuard } from 'src/auth/guard/auth.guard';
-// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
-import { Roles } from 'src/user/decorator/role.decorator';
-import { RoleGuard } from 'src/user/guards/role.guard';
+import { AuthGuard } from '../auth/guard/auth.guard';
+import { Roles } from '../user/decorator/role.decorator';
+import { RoleGuard } from '../user/guards/role.guard';
 import { BodyTypeService } from './body-type.service';
 import { CreateBodyTypeDTO } from './dto/createBodyType.dto';
 import { BodyTypeEntity } from './entity/bodyType.entity';

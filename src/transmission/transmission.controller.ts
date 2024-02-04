@@ -14,10 +14,10 @@ import {
   ApiResponse,
   ApiTags,
 } from '@nestjs/swagger';
-import { AuthGuard } from 'src/auth/guard/auth.guard';
+import { AuthGuard } from '../auth/guard/auth.guard';
 // import { UserRolesEnum } from 'src/core/enums/userRole.enum';
-import { Roles } from 'src/user/decorator/role.decorator';
-import { RoleGuard } from 'src/user/guards/role.guard';
+import { Roles } from '../user/decorator/role.decorator';
+import { RoleGuard } from '../user/guards/role.guard';
 import { CreateTransmissionDTO } from './dto/createTransmisson.dto';
 import { TransmissionEntity } from './entity/trnasmission.entity';
 import { TransmissionService } from './transmission.service';

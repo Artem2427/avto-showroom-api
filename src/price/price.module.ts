@@ -4,7 +4,7 @@ import { PriceEntity } from './entity/price.entity';
 import { PriceService } from './price.service';
 import { PriceController } from './price.controller';
 import { HttpModule } from '@nestjs/axios';
-import { CarModule } from 'src/car/car.module';
+import { CarModule } from '../car/car.module';
 
 @Module({
   imports: [

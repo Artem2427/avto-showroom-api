@@ -1,14 +1,13 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { CurrencyEnum } from '../../../core/enums/currency.enum';
-import { BodyTypeEntity } from 'src/body-type/entity/bodyType.entity';
-import { BrandEntity } from 'src/brand/entity/brand.entity';
-import { ColorEntity } from 'src/color/entity/color.entity';
-// import { BaseEntity } from 'src/core/entities/base.entity';
-// import { CurrencyEnum } from 'src/core/enums/currency.enum';
-import { DriveEntity } from 'src/drive/entity/drive.entity';
-import { EngineEntity } from 'src/engine/entity/engine.entity';
-import { ModelEntity } from 'src/model/entity/model.entity';
-import { TransmissionEntity } from 'src/transmission/entity/trnasmission.entity';
+import { BodyTypeEntity } from '../../body-type/entity/bodyType.entity';
+import { BrandEntity } from '../../brand/entity/brand.entity';
+import { ColorEntity } from '../../color/entity/color.entity';
+
+import { DriveEntity } from '../../drive/entity/drive.entity';
+import { EngineEntity } from '../../engine/entity/engine.entity';
+import { ModelEntity } from '../../model/entity/model.entity';
+import { TransmissionEntity } from '../../transmission/entity/trnasmission.entity';
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'cars' })

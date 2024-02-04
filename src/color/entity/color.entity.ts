@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { CarEntity } from 'src/car/entity/car.entity';
+import { CarEntity } from '../../car/entity/car.entity';
 // import { BaseEntity } from 'src/core/entities/base.entity';
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 

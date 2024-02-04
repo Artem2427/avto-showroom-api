@@ -1,8 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { DriveEnum } from '../../../core/enums/drive.enum';
-import { CarEntity } from 'src/car/entity/car.entity';
-// import { BaseEntity } from 'src/core/entities/base.entity';
-// import { DriveEnum } from 'src/core/enums/drive.enum';
+import { CarEntity } from '../../car/entity/car.entity';
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'drives' })

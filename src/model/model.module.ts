@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { BrandEntity } from 'src/brand/entity/brand.entity';
+import { BrandEntity } from '../brand/entity/brand.entity';
 import { ModelEntity } from './entity/model.entity';
 import { ModelController } from './model.controller';
 import { ModelService } from './model.service';

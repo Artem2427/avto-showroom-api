@@ -4,9 +4,8 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-// import { FuelEnum } from 'src/core/enums/fuel.enum';
-import { FuelService } from 'src/fuel/fuel.service';
-import { ModelService } from 'src/model/model.service';
+import { FuelService } from '../fuel/fuel.service';
+import { ModelService } from '../model/model.service';
 import { Repository } from 'typeorm';
 import { CreateEngineDTO } from './dto/createEngine.dto';
 import { UpdateEngineDTO } from './dto/updateEngine.dto';

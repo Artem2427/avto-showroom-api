@@ -1,9 +1,3 @@
-// import { CarAdminOrderingFieldsEnum } from 'src/core/enums/carAdminOrederingFields.enum copy';
-// import {
-//   CarFilterFieldsEnum,
-//   FilterParamsValuesType,
-// } from 'src/core/enums/carFilter.enum';
-// import { SortDirection } from 'src/core/enums/sortDirection.enum';
 import { PaginationFilterDTO } from '../dto/paginationFilter.dto';
 import { IParseOrdering } from '../types/paginationParams.interface';
 import { SortDirection } from '../../../core/enums/sortDirection.enum';

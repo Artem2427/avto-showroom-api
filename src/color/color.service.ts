@@ -4,7 +4,6 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-// import { PaginationQueryDTO } from 'src/core/dto/pagination.query.dto';
 import { Repository } from 'typeorm';
 import { CreateColorDTO } from './dto/createColor.dto';
 import { ColorEntity } from './entity/color.entity';

@@ -1,8 +1,8 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NextFunction, Response } from 'express';
-import { IExpressRequest } from 'src/types/expressRequest.interface';
-import { UserService } from 'src/user/user.service';
+import { IExpressRequest } from '../../types/expressRequest.interface';
+import { UserService } from '../../user/user.service';
 import { AuthService } from '../auth.service';
 
 @Injectable()

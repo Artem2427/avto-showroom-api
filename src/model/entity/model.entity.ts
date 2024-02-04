@@ -1,8 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { BrandEntity } from 'src/brand/entity/brand.entity';
-import { CarEntity } from 'src/car/entity/car.entity';
-// import { BaseEntity } from 'src/core/entities/base.entity';
-import { EngineEntity } from 'src/engine/entity/engine.entity';
+import { BrandEntity } from '../../brand/entity/brand.entity';
+import { CarEntity } from '../../car/entity/car.entity';
+import { EngineEntity } from '../../engine/entity/engine.entity';
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'models' })

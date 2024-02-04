@@ -19,7 +19,7 @@ import {
   ApiOperation,
   ApiTags,
 } from '@nestjs/swagger';
-import { AuthGuard } from 'src/auth/guard/auth.guard';
+import { AuthGuard } from '../auth/guard/auth.guard';
 // import { PaginationQueryDTO } from 'src/core/dto/pagination.query.dto';
 // import { UserRolesEnum } from 'src/core/enums/userRole.enum';
 import { Roles } from './decorator/role.decorator';

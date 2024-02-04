@@ -17,11 +17,10 @@ import {
   ApiResponse,
   ApiTags,
 } from '@nestjs/swagger';
-import { AuthGuard } from 'src/auth/guard/auth.guard';
-// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
-import { IdValidationPipe } from 'src/pipes/id-validation.pipe';
-import { Roles } from 'src/user/decorator/role.decorator';
-import { RoleGuard } from 'src/user/guards/role.guard';
+import { AuthGuard } from '../auth/guard/auth.guard';
+import { IdValidationPipe } from '../pipes/id-validation.pipe';
+import { Roles } from '../user/decorator/role.decorator';
+import { RoleGuard } from '../user/guards/role.guard';
 import { CreateEngineDTO } from './dto/createEngine.dto';
 import { UpdateEngineDTO } from './dto/updateEngine.dto';
 import { EngineService } from './engine.service';

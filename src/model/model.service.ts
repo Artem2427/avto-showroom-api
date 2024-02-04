@@ -6,7 +6,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { BrandEntity } from 'src/brand/entity/brand.entity';
+import { BrandEntity } from '../brand/entity/brand.entity';
 import { Repository } from 'typeorm';
 import { CreateModelDTO } from './dto/createModel.dto';
 import { ModelEntity } from './entity/model.entity';

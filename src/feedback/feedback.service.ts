@@ -4,8 +4,6 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-// import { PaginationQueryDTO } from 'src/core/dto/pagination.query.dto';
-// import { IPaginationQuery } from 'src/core/types/pagination.intrface';
 import { Repository } from 'typeorm';
 import { CreateFeedbackDTO } from './dto/createFeedback.dto';
 

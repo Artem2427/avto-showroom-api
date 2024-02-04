@@ -1,7 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { CurrencyEnum } from '../../../core/enums/currency.enum';
-// import { BaseEntity } from 'src/core/entities/base.entity';
-// import { CurrencyEnum } from 'src/core/enums/currency.enum';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'prices' })

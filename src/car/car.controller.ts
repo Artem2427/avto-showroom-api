@@ -22,13 +22,9 @@ import {
   ApiOperation,
   ApiTags,
 } from '@nestjs/swagger';
-import { AuthGuard } from 'src/auth/guard/auth.guard';
-// import { ResSuccessDTO } from 'src/core/dto/resSuccess.dto';
-// import { CarAdminOrderingFieldsEnum } from 'src/core/enums/carAdminOrederingFields.enum copy';
-// import { CarOrderingFieldsEnum } from 'src/core/enums/carOrederingFields.enum';
-// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
-import { IdValidationPipe } from 'src/pipes/id-validation.pipe';
-import { Roles } from 'src/user/decorator/role.decorator';
+import { AuthGuard } from '../auth/guard/auth.guard';
+import { IdValidationPipe } from '../pipes/id-validation.pipe';
+import { Roles } from '../user/decorator/role.decorator';
 import { RoleGuard } from 'src/user/guards/role.guard';
 import { CarService } from './car.service';
 import { AddCarImageDTO } from './dto/addCarImage.dto';

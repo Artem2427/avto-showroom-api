@@ -2,10 +2,6 @@ import { CarAdminOrderingFieldsEnum } from '../../../core/enums/carAdminOrederin
 import { CarOrderingFieldsEnum } from '../../../core/enums/carOrederingFields.enum';
 import { SortDirection } from '../../../core/enums/sortDirection.enum';
 import { IPagination } from '../../../core/types/pagination.intrface';
-// import { CarAdminOrderingFieldsEnum } from 'src/core/enums/carAdminOrederingFields.enum copy';
-// import { CarOrderingFieldsEnum } from 'src/core/enums/carOrederingFields.enum';
-// import { SortDirection } from 'src/core/enums/sortDirection.enum';
-// import { IPagination } from 'src/core/types/pagination.intrface';
 
 export interface IPaginationParams<T extends OrderingFields> {
   paginationSettings: IPagination;

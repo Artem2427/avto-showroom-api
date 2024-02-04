@@ -4,16 +4,13 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { BodyTypeService } from 'src/body-type/body-type.service';
-import { BrandService } from 'src/brand/brand.service';
-import { ColorService } from 'src/color/color.service';
-// import { CarOrderingFieldsEnum } from 'src/core/enums/carOrederingFields.enum';
-// import { SortDirection } from 'src/core/enums/sortDirection.enum';
-// import { Utils } from 'src/core/utils/utils';
-import { DriveService } from 'src/drive/drive.service';
-import { EngineService } from 'src/engine/engine.service';
-import { ModelService } from 'src/model/model.service';
-import { TransmissionService } from 'src/transmission/transmission.service';
+import { BodyTypeService } from '../body-type/body-type.service';
+import { BrandService } from '../brand/brand.service';
+import { ColorService } from '../color/color.service';
+import { DriveService } from '../drive/drive.service';
+import { EngineService } from '../engine/engine.service';
+import { ModelService } from '../model/model.service';
+import { TransmissionService } from '../transmission/transmission.service';
 import { Brackets, Repository } from 'typeorm';
 import {
   filterCarsFindOptions,
@@ -29,10 +26,9 @@ import {
   IPaginationParams,
   OrderingFields,
 } from './types/paginationParams.interface';
-// import { CarAdminOrderingFieldsEnum } from 'src/core/enums/carAdminOrederingFields.enum copy';
 import { RemoveImageQueryDTO } from './dto/removeImageQuery.dto';
-import { API_URL } from 'src/file/fileConstants';
-import { FileService } from 'src/file/file.service';
+import { API_URL } from '../file/fileConstants';
+import { FileService } from '../file/file.service';
 import { Utils } from '../../core/utils/utils';
 import { SortDirection } from '../../core/enums/sortDirection.enum';
 import { CarOrderingFieldsEnum } from '../../core/enums/carOrederingFields.enum';

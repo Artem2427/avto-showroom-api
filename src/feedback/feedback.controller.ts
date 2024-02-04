@@ -12,12 +12,10 @@ import {
   ValidationPipe,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
-import { AuthGuard } from 'src/auth/guard/auth.guard';
-// import { PaginationQueryDTO } from 'src/core/dto/pagination.query.dto';
-// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
+import { AuthGuard } from '../auth/guard/auth.guard';
 import { IdValidationPipe } from 'src/pipes/id-validation.pipe';
-import { Roles } from 'src/user/decorator/role.decorator';
-import { RoleGuard } from 'src/user/guards/role.guard';
+import { Roles } from '../user/decorator/role.decorator';
+import { RoleGuard } from '../user/guards/role.guard';
 import { CreateFeedbackDTO } from './dto/createFeedback.dto';
 
 import { UpdateStatusFeedbackDTO } from './dto/updateStatus.dto';

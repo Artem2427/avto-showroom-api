@@ -12,7 +12,7 @@ import { PriceEntity } from './entity/price.entity';
 import { Repository } from 'typeorm';
 // import { CurrencyEnum } from 'src/core/enums/currency.enum';
 import { ChangeCurrencyDTO } from './dto/changeCurrency.dto';
-import { CarService } from 'src/car/car.service';
+import { CarService } from '../car/car.service';
 import { CurrencyEnum } from '../../core/enums/currency.enum';
 
 @Injectable()

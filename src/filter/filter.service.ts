@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { BodyTypeService } from 'src/body-type/body-type.service';
-import { BrandService } from 'src/brand/brand.service';
-import { CarService } from 'src/car/car.service';
-import { ColorService } from 'src/color/color.service';
-import { FuelService } from 'src/fuel/fuel.service';
-import { TransmissionService } from 'src/transmission/transmission.service';
+import { BodyTypeService } from '../body-type/body-type.service';
+import { BrandService } from '../brand/brand.service';
+import { CarService } from '../car/car.service';
+import { ColorService } from '../color/color.service';
+import { FuelService } from '../fuel/fuel.service';
+import { TransmissionService } from '../transmission/transmission.service';
 import { FilterResDTO } from './dto/filter.response.dto';
 
 @Injectable()

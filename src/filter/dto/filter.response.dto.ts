@@ -1,9 +1,9 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { BodyTypeEntity } from 'src/body-type/entity/bodyType.entity';
-import { BrandEntity } from 'src/brand/entity/brand.entity';
-import { ColorEntity } from 'src/color/entity/color.entity';
-import { FuelEntity } from 'src/fuel/entity/fuelType.entity';
-import { TransmissionEntity } from 'src/transmission/entity/trnasmission.entity';
+import { BodyTypeEntity } from '../../body-type/entity/bodyType.entity';
+import { BrandEntity } from '../../brand/entity/brand.entity';
+import { ColorEntity } from '../../color/entity/color.entity';
+import { FuelEntity } from '../../fuel/entity/fuelType.entity';
+import { TransmissionEntity } from '../../transmission/entity/trnasmission.entity';
 
 export class FilterResDTO {
   @ApiProperty({ type: [BodyTypeEntity] })

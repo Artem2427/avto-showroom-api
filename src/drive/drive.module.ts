@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CarEntity } from 'src/car/entity/car.entity';
+import { CarEntity } from '../car/entity/car.entity';
 import { DriveController } from './drive.controller';
 import { DriveService } from './drive.service';
 import { DriveEntity } from './entity/drive.entity';

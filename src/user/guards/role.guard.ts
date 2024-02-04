@@ -6,7 +6,7 @@ import {
   Injectable,
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import { IExpressRequest } from 'src/types/expressRequest.interface';
+import { IExpressRequest } from '../../types/expressRequest.interface';
 import { ROLES_KEY } from '../decorator/role.decorator';
 
 @Injectable()

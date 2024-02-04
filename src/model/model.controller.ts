@@ -16,11 +16,10 @@ import {
   ApiOperation,
   ApiTags,
 } from '@nestjs/swagger';
-import { AuthGuard } from 'src/auth/guard/auth.guard';
-// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
-import { IdValidationPipe } from 'src/pipes/id-validation.pipe';
-import { Roles } from 'src/user/decorator/role.decorator';
-import { RoleGuard } from 'src/user/guards/role.guard';
+import { AuthGuard } from '../auth/guard/auth.guard';
+import { IdValidationPipe } from '../pipes/id-validation.pipe';
+import { Roles } from '../user/decorator/role.decorator';
+import { RoleGuard } from '../user/guards/role.guard';
 import { CreateModelDTO } from './dto/createModel.dto';
 import { ModelEntity } from './entity/model.entity';
 import { ModelService } from './model.service';
