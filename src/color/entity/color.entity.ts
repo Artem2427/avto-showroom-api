@@ -1,6 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
+import { BaseEntity } from 'core/entities/base.entity';
 import { CarEntity } from 'src/car/entity/car.entity';
-import { BaseEntity } from 'src/core/entities/base.entity';
+// import { BaseEntity } from 'src/core/entities/base.entity';
 import { Column, Entity, OneToMany } from 'typeorm';
 
 @Entity({ name: 'colors' })

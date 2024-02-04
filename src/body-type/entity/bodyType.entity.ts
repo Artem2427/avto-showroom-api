@@ -1,7 +1,9 @@
 import { ApiProperty } from '@nestjs/swagger';
+import { BaseEntity } from 'core/entities/base.entity';
+import { BodyTypeEnum } from 'core/enums/bodyType.enum';
 import { CarEntity } from 'src/car/entity/car.entity';
-import { BaseEntity } from 'src/core/entities/base.entity';
-import { BodyTypeEnum } from 'src/core/enums/bodyType.enum';
+// import { BaseEntity } from 'src/core/entities/base.entity';
+// import { BodyTypeEnum } from 'src/core/enums/bodyType.enum';
 import { Column, Entity, OneToMany } from 'typeorm';
 
 @Entity({ name: 'bodyTypes' })

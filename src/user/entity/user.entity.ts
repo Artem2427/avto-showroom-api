@@ -1,8 +1,10 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { BaseEntity } from 'src/core/entities/base.entity';
-import { UserRolesEnum } from 'src/core/enums/userRole.enum';
+// import { BaseEntity } from 'src/core/entities/base.entity';
+// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
 import { BeforeInsert, Column, Entity } from 'typeorm';
 import * as bcrypt from 'bcrypt';
+import { BaseEntity } from 'core/entities/base.entity';
+import { UserRolesEnum } from 'core/enums/userRole.enum';
 
 @Entity({ name: 'users' })
 export class UserEntity extends BaseEntity {

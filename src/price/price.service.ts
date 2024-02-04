@@ -10,9 +10,10 @@ import { IBankRate } from './types/bankRate.interface';
 import { InjectRepository } from '@nestjs/typeorm';
 import { PriceEntity } from './entity/price.entity';
 import { Repository } from 'typeorm';
-import { CurrencyEnum } from 'src/core/enums/currency.enum';
+// import { CurrencyEnum } from 'src/core/enums/currency.enum';
 import { ChangeCurrencyDTO } from './dto/changeCurrency.dto';
 import { CarService } from 'src/car/car.service';
+import { CurrencyEnum } from 'core/enums/currency.enum';
 
 @Injectable()
 export class PriceService {

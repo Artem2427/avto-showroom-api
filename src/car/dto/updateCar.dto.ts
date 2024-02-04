@@ -10,7 +10,8 @@ import {
   Matches,
   Min,
 } from 'class-validator';
-import { CurrencyEnum } from 'src/core/enums/currency.enum';
+import { CurrencyEnum } from 'core/enums/currency.enum';
+// import { CurrencyEnum } from 'src/core/enums/currency.enum';
 
 export class UpdateCarDTO {
   @ApiProperty({ type: Number, minimum: 0 })

@@ -14,12 +14,13 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 import { AuthGuard } from 'src/auth/guard/auth.guard';
-import { UserRolesEnum } from 'src/core/enums/userRole.enum';
+// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
 import { Roles } from 'src/user/decorator/role.decorator';
 import { RoleGuard } from 'src/user/guards/role.guard';
 import { CreateFuelDTO } from './dto/createFuel.dto';
 import { FuelEntity } from './entity/fuelType.entity';
 import { FuelService } from './fuel.service';
+import { UserRolesEnum } from 'core/enums/userRole.enum';
 
 @ApiTags('Fuel flow')
 @Controller('fuel')

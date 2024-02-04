@@ -20,8 +20,8 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 import { AuthGuard } from 'src/auth/guard/auth.guard';
-import { PaginationQueryDTO } from 'src/core/dto/pagination.query.dto';
-import { UserRolesEnum } from 'src/core/enums/userRole.enum';
+// import { PaginationQueryDTO } from 'src/core/dto/pagination.query.dto';
+// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
 import { Roles } from './decorator/role.decorator';
 import { User } from './decorator/user.decorator';
 import { ChangePasswordDTO } from './dto/changePassowrd.dto';
@@ -30,6 +30,8 @@ import { UpdateUserDTO } from './dto/updateUser.dto';
 import { UserEntity } from './entity/user.entity';
 import { RoleGuard } from './guards/role.guard';
 import { UserService } from './user.service';
+import { PaginationQueryDTO } from 'core/dto/pagination.query.dto';
+import { UserRolesEnum } from 'core/enums/userRole.enum';
 
 @ApiTags('User flow')
 @Controller('user')

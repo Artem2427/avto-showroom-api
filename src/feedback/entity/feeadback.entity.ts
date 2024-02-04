@@ -1,5 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { BaseEntity } from 'src/core/entities/base.entity';
+import { BaseEntity } from 'core/entities/base.entity';
+// import { BaseEntity } from 'src/core/entities/base.entity';
 import { Column, Entity } from 'typeorm';
 
 @Entity('feedbacks')

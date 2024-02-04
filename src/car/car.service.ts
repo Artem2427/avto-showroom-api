@@ -7,9 +7,9 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { BodyTypeService } from 'src/body-type/body-type.service';
 import { BrandService } from 'src/brand/brand.service';
 import { ColorService } from 'src/color/color.service';
-import { CarOrderingFieldsEnum } from 'src/core/enums/carOrederingFields.enum';
-import { SortDirection } from 'src/core/enums/sortDirection.enum';
-import { Utils } from 'src/core/utils/utils';
+// import { CarOrderingFieldsEnum } from 'src/core/enums/carOrederingFields.enum';
+// import { SortDirection } from 'src/core/enums/sortDirection.enum';
+// import { Utils } from 'src/core/utils/utils';
 import { DriveService } from 'src/drive/drive.service';
 import { EngineService } from 'src/engine/engine.service';
 import { ModelService } from 'src/model/model.service';
@@ -29,10 +29,14 @@ import {
   IPaginationParams,
   OrderingFields,
 } from './types/paginationParams.interface';
-import { CarAdminOrderingFieldsEnum } from 'src/core/enums/carAdminOrederingFields.enum copy';
+// import { CarAdminOrderingFieldsEnum } from 'src/core/enums/carAdminOrederingFields.enum copy';
 import { RemoveImageQueryDTO } from './dto/removeImageQuery.dto';
 import { API_URL } from 'src/file/fileConstants';
 import { FileService } from 'src/file/file.service';
+import { Utils } from 'core/utils/utils';
+import { SortDirection } from 'core/enums/sortDirection.enum';
+import { CarOrderingFieldsEnum } from 'core/enums/carOrederingFields.enum';
+import { CarAdminOrderingFieldsEnum } from 'core/enums/carAdminOrederingFields.enum';
 
 @Injectable()
 export class CarService {

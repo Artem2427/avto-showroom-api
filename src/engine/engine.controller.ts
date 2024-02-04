@@ -18,7 +18,7 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 import { AuthGuard } from 'src/auth/guard/auth.guard';
-import { UserRolesEnum } from 'src/core/enums/userRole.enum';
+// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
 import { IdValidationPipe } from 'src/pipes/id-validation.pipe';
 import { Roles } from 'src/user/decorator/role.decorator';
 import { RoleGuard } from 'src/user/guards/role.guard';
@@ -26,6 +26,7 @@ import { CreateEngineDTO } from './dto/createEngine.dto';
 import { UpdateEngineDTO } from './dto/updateEngine.dto';
 import { EngineService } from './engine.service';
 import { EngineEntity } from './entity/engine.entity';
+import { UserRolesEnum } from 'core/enums/userRole.enum';
 
 @ApiTags('Engine flow')
 @Controller('engine')

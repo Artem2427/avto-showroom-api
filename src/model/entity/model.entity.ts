@@ -1,7 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
+import { BaseEntity } from 'core/entities/base.entity';
 import { BrandEntity } from 'src/brand/entity/brand.entity';
 import { CarEntity } from 'src/car/entity/car.entity';
-import { BaseEntity } from 'src/core/entities/base.entity';
+// import { BaseEntity } from 'src/core/entities/base.entity';
 import { EngineEntity } from 'src/engine/entity/engine.entity';
 import { Column, Entity, ManyToOne, OneToMany } from 'typeorm';
 

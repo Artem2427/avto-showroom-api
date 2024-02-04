@@ -19,8 +19,8 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 import { AuthGuard } from 'src/auth/guard/auth.guard';
-import { PaginationQueryDTO } from 'src/core/dto/pagination.query.dto';
-import { UserRolesEnum } from 'src/core/enums/userRole.enum';
+// import { PaginationQueryDTO } from 'src/core/dto/pagination.query.dto';
+// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
 import { IdValidationPipe } from 'src/pipes/id-validation.pipe';
 import { Roles } from 'src/user/decorator/role.decorator';
 import { RoleGuard } from 'src/user/guards/role.guard';
@@ -28,6 +28,8 @@ import { ColorService } from './color.service';
 import { CreateColorDTO } from './dto/createColor.dto';
 
 import { ColorEntity } from './entity/color.entity';
+import { PaginationQueryDTO } from 'core/dto/pagination.query.dto';
+import { UserRolesEnum } from 'core/enums/userRole.enum';
 
 @ApiTags('Color flow')
 @Controller('color')

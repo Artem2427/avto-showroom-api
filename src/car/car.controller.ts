@@ -23,10 +23,10 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 import { AuthGuard } from 'src/auth/guard/auth.guard';
-import { ResSuccessDTO } from 'src/core/dto/resSuccess.dto';
-import { CarAdminOrderingFieldsEnum } from 'src/core/enums/carAdminOrederingFields.enum copy';
-import { CarOrderingFieldsEnum } from 'src/core/enums/carOrederingFields.enum';
-import { UserRolesEnum } from 'src/core/enums/userRole.enum';
+// import { ResSuccessDTO } from 'src/core/dto/resSuccess.dto';
+// import { CarAdminOrderingFieldsEnum } from 'src/core/enums/carAdminOrederingFields.enum copy';
+// import { CarOrderingFieldsEnum } from 'src/core/enums/carOrederingFields.enum';
+// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
 import { IdValidationPipe } from 'src/pipes/id-validation.pipe';
 import { Roles } from 'src/user/decorator/role.decorator';
 import { RoleGuard } from 'src/user/guards/role.guard';
@@ -41,6 +41,10 @@ import { PaginationResDTO } from './dto/paginationRes.dto';
 import { RemoveImageQueryDTO } from './dto/removeImageQuery.dto';
 import { UpdateCarDTO } from './dto/updateCar.dto';
 import { CarEntity } from './entity/car.entity';
+import { ResSuccessDTO } from 'core/dto/resSuccess.dto';
+import { UserRolesEnum } from 'core/enums/userRole.enum';
+import { CarOrderingFieldsEnum } from 'core/enums/carOrederingFields.enum';
+import { CarAdminOrderingFieldsEnum } from 'core/enums/carAdminOrederingFields.enum';
 
 @ApiTags('Car flow')
 @Controller('cars')

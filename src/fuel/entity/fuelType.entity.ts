@@ -1,6 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { BaseEntity } from 'src/core/entities/base.entity';
-import { FuelEnum } from 'src/core/enums/fuel.enum';
+import { BaseEntity } from 'core/entities/base.entity';
+import { FuelEnum } from 'core/enums/fuel.enum';
+// import { BaseEntity } from 'src/core/entities/base.entity';
+// import { FuelEnum } from 'src/core/enums/fuel.enum';
 import { EngineEntity } from 'src/engine/entity/engine.entity';
 import { Column, Entity, OneToMany } from 'typeorm';
 

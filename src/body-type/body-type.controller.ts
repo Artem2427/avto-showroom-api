@@ -18,12 +18,13 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 import { AuthGuard } from 'src/auth/guard/auth.guard';
-import { UserRolesEnum } from 'src/core/enums/userRole.enum';
+// import { UserRolesEnum } from 'src/core/enums/userRole.enum';
 import { Roles } from 'src/user/decorator/role.decorator';
 import { RoleGuard } from 'src/user/guards/role.guard';
 import { BodyTypeService } from './body-type.service';
 import { CreateBodyTypeDTO } from './dto/createBodyType.dto';
 import { BodyTypeEntity } from './entity/bodyType.entity';
+import { UserRolesEnum } from 'core/enums/userRole.enum';
 
 @ApiTags('Body type flow')
 @Controller('body-type')
