@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { BaseEntity } from 'core/entities/base.entity';
+// import { BaseEntity } from 'core/entities/base.entity';
 import { CurrencyEnum } from 'core/enums/currency.enum';
 import { BodyTypeEntity } from 'src/body-type/entity/bodyType.entity';
 import { BrandEntity } from 'src/brand/entity/brand.entity';
@@ -10,10 +10,22 @@ import { DriveEntity } from 'src/drive/entity/drive.entity';
 import { EngineEntity } from 'src/engine/entity/engine.entity';
 import { ModelEntity } from 'src/model/entity/model.entity';
 import { TransmissionEntity } from 'src/transmission/entity/trnasmission.entity';
-import { Column, Entity, ManyToOne } from 'typeorm';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'cars' })
-export class CarEntity extends BaseEntity {
+export class CarEntity {
+  @ApiProperty({ type: String })
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
+
+  @ApiProperty({ type: String })
+  @Column({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' })
+  createdAt: Date;
+
+  @ApiProperty({ type: String })
+  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  updatedAt: Date;
+
   @ApiProperty({ type: Number, name: 'price' })
   @Column({ type: 'real' })
   price: number;

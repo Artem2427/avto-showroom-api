@@ -1,10 +1,22 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { BaseEntity } from 'core/entities/base.entity';
+// import { BaseEntity } from 'core/entities/base.entity';
 // import { BaseEntity } from 'src/core/entities/base.entity';
-import { Column, Entity } from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('feedbacks')
-export class FeedbackEntity extends BaseEntity {
+export class FeedbackEntity {
+  @ApiProperty({ type: String })
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
+
+  @ApiProperty({ type: String })
+  @Column({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' })
+  createdAt: Date;
+
+  @ApiProperty({ type: String })
+  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  updatedAt: Date;
+
   @ApiProperty({ type: Boolean })
   @Column({ type: 'boolean', default: false })
   isCall: boolean;

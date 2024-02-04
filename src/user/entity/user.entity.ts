@@ -1,13 +1,25 @@
 import { ApiProperty } from '@nestjs/swagger';
 // import { BaseEntity } from 'src/core/entities/base.entity';
 // import { UserRolesEnum } from 'src/core/enums/userRole.enum';
-import { BeforeInsert, Column, Entity } from 'typeorm';
+import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 import * as bcrypt from 'bcrypt';
-import { BaseEntity } from 'core/entities/base.entity';
+// import { BaseEntity } from 'core/entities/base.entity';
 import { UserRolesEnum } from 'core/enums/userRole.enum';
 
 @Entity({ name: 'users' })
-export class UserEntity extends BaseEntity {
+export class UserEntity {
+  @ApiProperty({ type: String })
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
+
+  @ApiProperty({ type: String })
+  @Column({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' })
+  createdAt: Date;
+
+  @ApiProperty({ type: String })
+  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  updatedAt: Date;
+
   @ApiProperty({ type: String })
   @Column({ type: 'varchar', length: '200', nullable: false })
   firstName: string;
